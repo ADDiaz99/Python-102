@@ -20,3 +20,11 @@ print(set_a - set_b)  # {'col', 'mex'}
 set_c = set_a.symmetric_difference(set_b)
 print(set_c) # {'col', 'mex', 'pe'}
 print(set_a ^ set_b) # {'col', 'mex', 'pe'}
+
+america = {'USA', 'ARGENTINA'}
+north_am = {'USA', 'MEXICO', 'CANADA'}
+central_am = {'PANAMA', 'EL SALVADOR', 'COSTA RICA'}
+south_am = {'COLOMBIA', 'VENEZUELA', 'PERU', 'ARGENTINA', 'BRAZIL'}
+
+new_set = america.union(north_am, central_am, south_am)
+print(new_set)
